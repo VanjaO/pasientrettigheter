@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" lang="no">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="SCRIPT/12_siders_mobiltema_gul.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" /> 
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<script src="SCRIPT/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<!--  	<script type="text/javascript" src="SCRIPT/jquery.mobile-1.3.0.js"></script> -->
+<!--	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script> -->
+<!--    <script src="SCRIPT/script.js"></script> -->
+<!--    <link rel="stylesheet" href="tvang.css" type="text/css"> -->
+
+<script src="SCRIPT/script.js"></script>
+
+<title>Tvang i helsetjenesten</title>
+</head>
+<body>
+
+<!-- Mobil_gul.css Hovedsiden -->
+<div data-role="page" id="page1">
+    <div data-role="content">
+    
+    <section>
+    <h1>Test deg i Pasientrettighetsloven §4A</h1>
+    
+    <p>Når kan du bruke tvang mot pasienter
+    som ikke forstår sin egen tilstand og som motsetter seg helsehjelp?
+    Velg en situasjon og løs saken! Du kan hente saker fra ulike
+    typer institusjoner og hoppe mellom temaene.</p>
+    <br/>
+    <br/>
+    <div class="front">
+    <img src="BILDER/Fortvilet_dame.jpeg">
+    <img src="BILDER/Kvinne_drikker.jpeg">
+  	<img src="BILDER/Fortvilet_mann.jpeg">
+<!--   		<img src="BILDER/Mann_i_rullestol.jpeg">
+  		<img src="BILDER/Yngre_dement_dame.jpeg">
+        <img src="BILDER/En_hjelpende_hand.jpeg">  -->
+    </div>
+   
+    <div class="dinrolle" data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+	<p>Velg situasjon:<br/><br/>
+	
+<label for="velg-institusjonstype">Velg institusjonstype</label>
+<select name="velg-institusjonstype" id="velg-institusjonstype">
+<option>Institusjonstype</option>
+	<option value="shus">Sykehus</option>
+	<option value="shjem">Sykehjem</option>
+	<option value="hjem">Hjemmetjenesten</option>
+	<option value="ikke">Ikke spesifisert</option>
+</select>
+
+<label for="velg-situasjon">Velg situasjon</label>
+<select name="velg-situasjon" id="velg-situasjon">
+<option>Situasjon</option>
+	<option value="c1">Lårhalsbrudd</option>
+	<option value="c2">Nekter medisiner</option>
+	<option value="c3">Nekter tannhelsetjenester</option>
+	<option value="c4">Velg tilfeldig</option>
+</select>
+
+
+</p>
+<!--	<label for="select-choice-day">Posisjon</label>
+<select name="select-choice-day" id="select-choice-day">
+	<option>Posisjon</option>
+	<option value="1">Institusjonsleder</option>
+	<option value="2">Avdelingsleder</option>
+	<option value="3">Sykepleier</option>
+	<option value="4">Lege</option>
+	<option value="5">Hjelpepleier</option>
+	<option value="6">Ikke spesifisert</option>
+	
+</select> -->
+</fieldset>
+</div>
+
+<!-- <div class="login">
+    <fieldset data-role="fieldcontain">
+    <label for="username" class="ui-hidden-accessible">Username:</label>
+	<input type="text" name="username" id="username" value="" placeholder="Brukernavn"/>
+	<label for="password" class="ui-hidden-accessible">Password:</label>
+	<input type="text" name="username" id="username" value="" placeholder="Passord"/>
+    </fieldset>
+</div> -->
+
+<div id="startbutton">
+    <a href="#page2" data-role="button" data-inline="true" data-corners="true" 
+data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text">Start</span></span></a>
+</div>
+
+</section>
+</div>
+</div>
+
+<!--  Page 2 Velg situasjonsbeskrivelse --> 
+
+<div data-role="page" id="page2" data-title="Velg situasjonsbeskrivelse">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page1" data-transition="slide" data-direction="reverse">
+                    Tilbake til forsiden
+                </a>
+            </li>
+            </ul>
+<section>  
+  <div>          
+<h1>Er tvang nødvendig?</h1>
+<p> Noen ganger må du bruke tvang for å gi nødvendig helsehjelp. Det er et brudd på 
+pasientrettighetsloven §4A å ikke bruke 
+tvang når det er påkrevet eller å bruke tvang i 
+tilfeller det ikke er helt nødvendig.<br/><br/> 
+Velg en situasjon du har lyst til å prøve deg på. 
+</p>
+</div>
+
+<div>
+<label for="flip-b"><p>Vil du følge alt eller bare løse oppgavene?</p></label>
+<div id="hurtigknapp" data-role="fieldcontain">
+	<select name="slider" id="flip-b" data-role="slider">
+		<option value="no">Alt</option>
+		<option value="yes">Kort</option>
+	</select> 
+</div>
+
+</div>
+
+<div>
+	<iframe width="250" height="135" src="http://www.youtube.com/embed/recHTUyEX10" 
+	frameborder="0" allowfullscreen></iframe>
+	
+
+	<div class="synopsis">
+	<a href="#page3" data-transition="slide">
+	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
+	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
+	</p><p>VELG 001 </p></a>
+	</div>
+
+
+<iframe width="250" height="135" src="http://www.youtube.com/embed/Od27xiPw3dA" 
+frameborder="0" allowfullscreen></iframe>
+<div class="synopsis">
+	<a href="#page3" data-transition="slide">
+	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
+	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
+	</p><p>VELG 001 </p></a>
+</div>
+
+<iframe width="250" height="135" src="http://www.youtube.com/embed/Yb3_M7i11-c" 
+frameborder="0" allowfullscreen></iframe>
+<div class="synopsis">
+	<a href="#page3" data-transition="slide">
+	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
+	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
+	</p><p>VELG 001 </p></a>
+</div>
+
+<iframe width="250" height="135" src="http://www.youtube.com/embed/4Y42SHkZBK4" 
+frameborder="0" allowfullscreen></iframe>
+
+<div class="synopsis">
+	<a href="#page3" data-transition="slide">
+	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
+	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
+	</p><p>VELG 001 </p></a>
+</div>
+
+<iframe width="250" height="135" src="http://www.youtube.com/embed/bOeKodzPNaY" 
+frameborder="0" allowfullscreen></iframe>
+
+<div class="synopsis">
+	<a href="#page3" data-transition="slide">
+	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
+	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
+	</p><p>VELG 001 </p></a>
+</div>
+
+</div>
+
+<div id="situasjonsbeskrivelser" data-role="footer">
+<a href="#page4" data-role="button" data-inline="true" data-corners="true" 
+data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text">Alle situasjonsbeskrivelsene</span></span></a>
+</div>
+
+</section>
+</div>
+</div>    
+
+<!--  Page 3 Temamenyene -->
+
+<div data-role="page" id="page3" data-title="Start spillet!">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page1" data-transition="slide" data-direction="reverse">
+                    Tilbake til forsiden
+                </a>
+            </li>
+            </ul>
+            
+<section>
+
+<h1>Løs saken!</h1>
+<p> Du kan begynne på et av temaene under som interesserer deg, eller du kan starte
+på det første og jobbe sekvensielt.<br/><br/> 
+Velg temaet du ønsker å begynne med.
+</p>
+
+<div class="hovedmeny">
+
+
+
+      <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            
+            <li data-theme="c">
+                <a href="#page4" data-transition="slide"><img src="BILDER/Kvinne_drikker.jpeg">
+                    <h1>Er tvang nødvendig?</h1>
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page6" data-transition="slide"><img src="BILDER/Fortvilet_mann.jpeg">
+                    <h1>Helsemessig grunnlag</h1>
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide"><img src="BILDER/En_hjelpende_hand.jpeg">
+                    <h1>Samtykkekompetanse</h1>
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide"><img src="BILDER/Sykepleier_dement_dame.jpeg">
+                    <h1>Alternativer til tvang?</h1>
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide"><img src="BILDER/Mann_i_rullestol.jpeg">
+                    <h1>Dokumentasjon</h1>
+                </a>
+            </li>
+       <!--     <li data-theme="c">
+                <a href="#page8" data-transition="slide"><img src="BILDER/Yngre_dement_dame.jpeg">
+                    <h1>Mine løsninger</h1>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</section>       
+</div>
+</div>           
+
+<!-- <blockquote class="tankeboble">
+<p>Når er det nødvendig med tvang?</p>
+</blockquote> -->
+
+
+<!--  Page 4 Er tvang nødvendig?  -->
+
+<div data-role="page" id="page4" data-title="Er tvang nødvendig?">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page3" data-transition="slide" data-direction="reverse">
+                    Tilbake til temasiden
+                </a>
+            </li>
+            </ul>
+            
+<section>
+<div>
+             <h1>Er tvang nødvendig?</h1>
+        
+<p>Tvang for å gjennomføre helsehjelp kan bare brukes dersom pasienten er ute av stand 
+til å forstå sin egen situasjon og helsehjelpen er
+livsnødvendig.
+</p>
+<p>Anna viser motstand mot enkelte av tiltakene på sykehjemmet. Graden av motstand 
+er vesentlig når vi snakker om tvang.</p>
+<p>Prøv deg på spørsmålene om eventuell tvangsbruk i Annas tilfelle.
+</p>
+</div>
+
+<div id="questions" data-role="fieldcontain" data-theme="b">
+<h3>Hvilke situasjoner er tvang? </h3>
+
+
+    	<fieldset data-role="controlgroup" data-mini="true">
+<input type="checkbox" name="checkbox-0" id="checkbox-mini-0" class="custom" data-mini="true" />
+<label for="checkbox-mini-0">Bruk av sengehest når Anna legger seg</label>
+<input type="checkbox" name="checkbox-1" id="checkbox-mini-1" class="custom" data-mini="true" />
+<label for="checkbox-mini-1">Bruk av sengehest når Anna våkner om natten</label>
+<input type="checkbox" name="checkbox-2" id="checkbox-mini-2" class="custom" data-mini="true" />
+<label for="checkbox-mini-2">Rullestol med brems fast til bordet</label>
+<label for="checkbox-mini-3">Rullestol med brems når hun roper hun vil hjem</label>
+<input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
+<label for="checkbox-mini-4">Lenestol på rommet når Anna roper</label>
+<input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
+<label for="checkbox-mini-5">Ingen av tiltakene er tvang</label>
+<input type="checkbox" name="checkbox-5" id="checkbox-mini-5" class="custom" data-mini="true" />
+		</fieldset>
+	</div>
+
+
+
+<div id="questions" data-role="fieldcontain" data-theme="b">
+<h3>Hvor mye motstand må Anna gi uttrykk for før det er snakk om tvang?</h3>
+
+<fieldset data-role="controlgroup" data-mini="true">
+    	
+    	<label for="radio-mini-2">Det er nok at hun sier i fra en gang</label>
+    	<input type="radio" name="radio-choice-2" id="radio-mini-2" value="choice-2"  />
+    	
+    	<label for="radio-mini-3">Hun må gi tydelig fysiske uttrykk</label>
+    	<input type="radio" name="radio-choice-3" id="radio-mini-3" value="choice-3"  />
+    	
+    	<label for="radio-mini-4">Hun må gi tydelige fysiske og verbale uttrykk</label>
+    	<input type="radio" name="radio-choice-4" id="radio-mini-4" value="choice-4"  />
+    	
+    	<label for="radio-mini-5">Hun må si fra tydelig og gjentatte ganger</label>
+    	<input type="radio" name="radio-choice-5" id="radio-mini-5" value="choice-5"  />
+    	
+		<label for="radio-mini-6">Det kan være tvang selv om hun ikke gjør motstand</label>
+		<input type="radio" name="radio-choice-6" id="radio-mini-6" value="choice-6"  />
+    	
+</fieldset>
+</div>
+
+<div id="sendsvar" data-role="footer">
+<a href="#page5" data-role="button" data-inline="true" data-corners="true" 
+data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+data-theme="b" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text">Avgi svar</span></span></a>
+</div>
+
+
+</section>
+
+    </div>
+</div>
+
+
+<!-- Page 5 Svarside "Mine svar" (Bruk av tvang) -->
+
+
+<div data-role="page" id="page5" data-title="Samtykkekompetanse">
+    <div data-role="content">
+            <ul data-role="listview"  data-divider-theme="b" data-inset="true" >
+            <li data-theme="b" >
+                <a href="#page4" data-transition="slide" data-direction="reverse" class="ui-icon-arrow-l">
+                    Tilbake til spørsmålssiden
+                </a>
+            </li>
+            </ul>
+<section>
+<h1>Mulige tvangstiltak?</h1>
+        
+<p>I følge §4A 4 tredje ledd er tiltak som hindrer bevegelsese definert som tvang. §4A 2 sier 
+at om pasienten motsetter seg helsehjelp er det snakk om tvang.
+</p>
+<div>
+	<div id="questions" data-role="fieldcontain">
+	<h3>Disse tiltakene er derfor tvang:</h3>
+    	
+    	<fieldset data-role="controlgroup" data-mini="true">
+<input type="checkbox" name="checkbox-0" id="checkbox-mini-0" class="custom" data-mini="true" />
+<label for="checkbox-mini-0">Bruk av sengehest når Anna legger seg</label>
+<input type="checkbox" name="checkbox-1" id="checkbox-mini-1" class="custom" data-mini="true" />
+<label for="checkbox-mini-1">Bruk av sengehest når Anna våkner om natten</label>
+<input type="checkbox" name="checkbox-2" id="checkbox-mini-2" class="custom" data-mini="true" />
+<label for="checkbox-mini-2">Rullestol med brems fast til bordet</label>
+<label for="checkbox-mini-3">Rullestol med brems når hun roper hun vil hjem</label>
+<input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
+<label for="checkbox-mini-4">Lenestol på rommet når Anna roper</label>
+<input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
+<label for="checkbox-mini-5">Ingen av tiltakene er tvang</label>
+<input type="checkbox" name="checkbox-5" id="checkbox-mini-5" class="custom" data-mini="true" />
+		</fieldset>
+    	
+	</div>
+</div>
+
+<div id="questions" data-role="fieldcontain">
+<h3>Disse ytringene må ses på som motstand:</h3>
+    	<fieldset data-role="controlgroup" data-mini="true">
+    	<label for="radio-mini-2">Det er nok at hun sier i fra en gang</label>
+    	<input type="radio" name="radio-choice-2" id="radio-mini-2" value="choice-2"  />
+    	
+    	<label for="radio-mini-3">Hun må gi tydelig fysiske uttrykk</label>
+    	<input type="radio" name="radio-choice-3" id="radio-mini-3" value="choice-3"  />
+    	
+    	<label for="radio-mini-4">Hun må gi tydelige fysiske og verbale uttrykk</label>
+    	<input type="radio" name="radio-choice-4" id="radio-mini-4" value="choice-4"  />
+    	
+    	<label for="radio-mini-5">Hun må si fra tydelig og gjentatte ganger</label>
+    	<input type="radio" name="radio-choice-5" id="radio-mini-5" value="choice-5"  />
+    	
+		<label for="radio-mini-6">Det kan være tvang selv om hun ikke gjør motstand</label>
+		<input type="radio" name="radio-choice-6" id="radio-mini-6" value="choice-6"  />
+    	</fieldset>
+</div>
+
+
+<div id="sendsvar" data-role="footer">
+<a href="#page6" data-role="button" data-inline="true" data-corners="true" 
+data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text">Neste tema</span></span></a>
+</div>
+
+
+</section>
+    </div>
+</div>
+
+
+<!-- Page 6 Helsemessig vurdering -->
+
+<div data-role="page" id="page6" data-title="Samtykkekompetanse">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page3" data-transition="slide" data-direction="reverse">
+                    Tilbake til temasiden
+                </a>
+            </li>
+            </ul>
+<section>
+
+<h1>Helsemessige vurderinger</h1>
+<p>Du plikter å gi nødvendig helsehjelp, men hva er nødvendig helsehjelp i denne
+situasjonen?</p>
+       
+<div id="questions" data-role="fieldcontain" data-theme="b">
+<h3>Hvilke av disse tiltakene er i denne situasjonen nødvendig helsehjelp?</h3>
+    	<fieldset data-role="controlgroup" data-mini="true">
+<input type="checkbox" name="checkbox-0" id="checkbox-mini-0" class="custom" data-mini="true" />
+<label for="checkbox-mini-0">Bruk av sengehest</label>
+<input type="checkbox" name="checkbox-1" id="checkbox-mini-1" class="custom" data-mini="true" />
+<label for="checkbox-mini-1">Rullestolen låses fast til bordet</label>
+<input type="checkbox" name="checkbox-2" id="checkbox-mini-2" class="custom" data-mini="true" />
+<label for="checkbox-mini-2">Sårbehandlingen</label>
+<label for="checkbox-mini-3">Å forhindre fall er nødvendig helsehjelp</label>
+<input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
+<label for="checkbox-mini-4">Bare medisinsk og kirurgisk behandling er nødvendig helsehjelp</label>
+<input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
+		</fieldset>
+</div>
+
+
+<div id="questions" data-role="fieldcontain" data-theme="b">
+<h3>Hva er helserisikoene i saken?</h3>
+    	<fieldset data-role="controlgroup" data-mini="true">
+<input type="checkbox" name="checkbox-0" id="checkbox-mini-0" class="custom" data-mini="true" />
+<label for="checkbox-mini-0">Fare for forlenget infeksjon</label>
+<input type="checkbox" name="checkbox-1" id="checkbox-mini-1" class="custom" data-mini="true" />
+<label for="checkbox-mini-1">Infeksjonen forverrer demenstilstanden</label>
+<input type="checkbox" name="checkbox-2" id="checkbox-mini-2" class="custom" data-mini="true" />
+<label for="checkbox-mini-2">Fare for nytt brudd</label>
+<label for="checkbox-mini-3">Fare for skade i bruddstedet</label>
+<input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
+<label for="checkbox-mini-4">Det er ingen stor helserisko</label>
+<input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
+		</fieldset>
+</div>
+
+
+<div id="sendsvar" data-role="footer">
+<a href="#page7" data-role="button" data-inline="true" data-corners="true" 
+data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text">Avgi svar</span></span></a>
+</div>
+</section>
+    </div>
+</div>
+
+
+<!-- Page 7 Helsemessig vurdering -->
+
+<div data-role="page" id="page7" data-title="Samtykkekompetanse" >
+    <div data-role="content" >
+            <ul data-role="listview" data-divider-theme="b" data-inset="true" >
+            <li data-theme="b">
+                <a href="#page3" data-transition="slide" data-direction="reverse">
+                    Tilbake til temasiden
+                </a>
+            </li>
+            </ul>
+<section data-theme="b">
+<h1>Hva er helsehjelp?</h1>
+<div>
+<h3>Følgende vil i juridisk forstand kunne være nødvendig helsehjelp i 
+dette tilfelle (riktig
+eller galt?):</h3>
+<div id="celler"><span><span class="flip-front">Opptrening</span>
+<span class="flip-back">Riktig</span></span></div>
+<div id="celler"><p>Sonde- intravenøsernæring</p></div>
+<div id="celler"><p>Helserådgivning</p></div>
+<div id="celler"><p>Sårstell</p></div>
+<div id="celler"><p>Sporing med GPS-sensor</p></div>
+<div id="celler"><p>Låse rullestol til bordet</p></div>
+<div id="celler"><p>Tannbehandling</p></div>
+<div id="celler"><p>Sengehest</p></div>
+<div id="celler"><p>Låse rommet om natten</p></div>
+<div id="celler"><p>Overvåknings- kamera på rommet</p></div>
+
+
+</section>
+</div>
+</div>
+
+
+
+
+<!-- Page 8  -->
+
+<div data-role="page" id="page8" data-title="Samtykkekompetanse">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page3" data-transition="slide" data-direction="reverse">
+                    Tilbake til temasiden
+                </a>
+            </li>
+            </ul>
+<section>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+	<legend>Date of Birth:</legend>
+
+    <label for="select-choice-month">Month</label>
+<select name="select-choice-month" id="select-choice-month">
+	<option>Month</option>
+	<option value="jan">January</option>
+	<!-- etc. -->
+</select>
+
+	<label for="select-choice-day">Day</label>
+<select name="select-choice-day" id="select-choice-day">
+	<option>Day</option>
+	<option value="1">1</option>
+	<!-- etc. -->
+</select>
+
+<label for="select-choice-year">Year</label>
+<select name="select-choice-year" id="select-choice-year">
+	<option>Year</option>
+	<option value="2011">2011</option>
+	<!-- etc. -->
+</select>
+</fieldset>
+</div>
+
+
+<!--  Koblet til kode i script.js -->
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+
+</section>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
