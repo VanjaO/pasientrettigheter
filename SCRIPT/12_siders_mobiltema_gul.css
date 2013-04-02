@@ -74,19 +74,25 @@ section h3 {	color: #64691b;
 section p {		padding: 0 20px;
 }
 
-section div {	
+section div {
 				margin-bottom: 0px;
+				
 }
 
 section img {	
 				border: 3px solid #cfd51d;			
 }
 
-section iframe {	border: 3px solid #cfd51d;
-					margin-left: 15px;
-					margin-bottom: 15px;
+section iframe {	position: relative;
+					border: 3px solid #cfd51d;
+					margin-left: 0px;
+					margin-bottom: 5%;
+					padding-right: 40%;
+					height: auto;
+					width: 49%;
 					/* padding-right: 15px; */
 }
+
 
 .login {		position: relative;
 				margin-left: 18px;
@@ -98,9 +104,12 @@ section iframe {	border: 3px solid #cfd51d;
 }
 
 
-.synopsis {		width: 100%;
+.synopsis {		position: relative;
+				margin-left: 190px;
+				margin-top: -180px;
+				margin-bottom: 10%;
+				width: 188px;
 				height: auto;
-				position: relative;
 				font-size: 0.78em;
 				
 				
@@ -113,6 +122,11 @@ section iframe {	border: 3px solid #cfd51d;
 
 }
 
+#video-float {	float: left;
+				width: 400px;
+				height: auto;
+				margin-top: 5%;
+}
 
 #startbutton {	position: relative;
 				margin-left: 110px;
@@ -125,7 +139,7 @@ section iframe {	border: 3px solid #cfd51d;
 				margin-top: -20px;			
 }
 
-#situasjonsbeskrivelser {   position: relative;
+#situasjonsbeskrivelser {   float: left;
 							margin-left: 75px;
 							margin-bottom: 20px;
 }
