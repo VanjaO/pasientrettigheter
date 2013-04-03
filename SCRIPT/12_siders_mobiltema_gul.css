@@ -13,7 +13,7 @@
 
 */ Flipkodene */
 
-/*#f1_container {
+#f1_container {
   position: relative;
   margin: 10px auto;
   width: 450px;
@@ -32,7 +32,7 @@
 #f1_container:hover #f1_card {
   transform: rotateY(180deg);
   box-shadow: -5px 5px 5px #aaa; 
-} */
+} 
 .face {
   position: absolute;
   width: 100%;
@@ -135,9 +135,9 @@ section iframe {	position: relative;
 					border: 3px solid #cfd51d;
 					margin-left: 0px;
 					margin-bottom: 5%;
-					padding-right: 40%;
+					padding-right: 38%;
 					height: auto;
-					width: 49%;
+					width: 30%;
 					/* padding-right: 15px; */
 }
 
@@ -153,10 +153,10 @@ section iframe {	position: relative;
 
 
 .synopsis {		position: relative;
-				margin-left: 190px;
+				margin-left: 110px;
 				margin-top: -180px;
-				margin-bottom: 10%;
-				width: 188px;
+				margin-bottom: 2%;
+				width: 175px;
 				height: auto;
 				font-size: 0.78em;
 				
@@ -166,7 +166,7 @@ section iframe {	position: relative;
 }
 
 /* Bildene på forsiden (virker ikke på mobil) - se img under theme "c" for størrelser */
-.front {  margin: -50px 2px 0px 5px; */
+.forside {  margin: -50px 2px 0px 5px; */
 
 }
 
@@ -188,7 +188,8 @@ section iframe {	position: relative;
 }
 
 #situasjonsbeskrivelser {   float: left;
-							margin-left: 75px;
+							margin-top: 10%;
+							margin-left: 15px;
 							margin-bottom: 20px;
 }
 
@@ -201,14 +202,7 @@ section iframe {	position: relative;
 #questions {	padding-left: 15px;
 }
 
-#celler {		position: relative;
-				margin: 30px;
-				padding: 30px 15px;
-				border: 3px solid #cfd51d;
-				text-align: center;
-				font-size: 1.3em;
-			
-				
+
 }
 
 .caseBilder {	margin-top: -50px;
@@ -688,7 +682,7 @@ section iframe {	position: relative;
 
 .ui-body-c img { 	width:80px;
 					height: 50px;
-					margin: 15px 0px 10px 10px;
+					margin: 14px -12px 10px 10px;
 }
 
 
