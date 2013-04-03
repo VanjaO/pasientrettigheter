@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" /> 
 <!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	<script src="SCRIPT/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-<!--  	<script type="text/javascript" src="SCRIPT/jquery.mobile-1.3.0.js"></script> -->
+<!--<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>-->
+    <script type="text/javascript" src="SCRIPT/jquery.mobile-1.3.0.js"></script>
 <!--	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script> -->
 <!--    <script src="SCRIPT/script.js"></script> -->
 <!--    <link rel="stylesheet" href="tvang.css" type="text/css"> -->
@@ -230,7 +230,6 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
 <div class="hovedmeny">
 
 
-
       <ul data-role="listview" data-divider-theme="b" data-inset="true">
             
             <li data-theme="c">
@@ -244,7 +243,7 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
                 </a>
             </li>
             <li data-theme="c">
-                <a href="#" data-transition="slide"><img src="BILDER/En_hjelpende_hand.jpeg">
+                <a href="#page8" data-transition="slide"><img src="BILDER/En_hjelpende_hand.jpeg">
                     <h1>Samtykkekompetanse</h1>
                 </a>
             </li>
@@ -448,7 +447,7 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
             </ul>
 <section>
 
-<h1>Helsemessige vurderinger</h1>
+<h1>Helsemessig grunnlag</h1>
 <p>Tvang kan, om ingen andre tiltak fører fram, brukes for å gjennomføre nødvendig helsehjelp.
 Hva kan i juridisk forstand være nødvendig helsehjelp i dette tilfellet?</p>
        
@@ -461,7 +460,7 @@ Hva kan i juridisk forstand være nødvendig helsehjelp i dette tilfellet?</p>
 <label for="checkbox-mini-1">Rullestolen låses fast til bordet</label>
 <input type="checkbox" name="checkbox-2" id="checkbox-mini-2" class="custom" data-mini="true" />
 <label for="checkbox-mini-2">Sårbehandlingen</label>
-<label for="checkbox-mini-3">Å forhindre fall er nødvendig helsehjelp</label>
+<label for="checkbox-mini-3">Å forhindre fall</label>
 <input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
 <label for="checkbox-mini-4">Bare medisinsk og kirurgisk behandling er nødvendig helsehjelp</label>
 <input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
@@ -480,7 +479,7 @@ Hva kan i juridisk forstand være nødvendig helsehjelp i dette tilfellet?</p>
 <label for="checkbox-mini-2">Fare for nytt brudd</label>
 <label for="checkbox-mini-3">Fare for skade i bruddstedet</label>
 <input type="checkbox" name="checkbox-3" id="checkbox-mini-3" class="custom" data-mini="true" />
-<label for="checkbox-mini-4">Det er ingen stor helserisko</label>
+<label for="checkbox-mini-4">Det er ingen helserisko</label>
 <input type="checkbox" name="checkbox-4" id="checkbox-mini-4" class="custom" data-mini="true" />
 		</fieldset>
 </div>
@@ -515,17 +514,74 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
 <h3>Følgende vil i juridisk forstand kunne være nødvendig helsehjelp i 
 dette tilfelle (riktig
 eller galt?):</h3>
-<div id="celler"><span><span class="flip-front">Opptrening</span>
-<span class="flip-back">Riktig</span></span></div>
-<div id="celler"><p>Sonde- intravenøsernæring</p></div>
-<div id="celler"><p>Helserådgivning</p></div>
-<div id="celler"><p>Sårstell</p></div>
-<div id="celler"><p>Sporing med GPS-sensor</p></div>
-<div id="celler"><p>Låse rullestol til bordet</p></div>
-<div id="celler"><p>Tannbehandling</p></div>
-<div id="celler"><p>Sengehest</p></div>
-<div id="celler"><p>Låse rommet om natten</p></div>
-<div id="celler"><p>Overvåknings- kamera på rommet</p></div>
+</div>
+
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Korrekt!</p></div>
+        <div class="front"><p>Opptrening</p></div>
+    </div>
+</div>
+
+<div id="card-container">
+	<div id="card">
+        <div class="back"><p>Nei, det er ikke nødvendig helsehjelp</p></div>
+        <div class="front"><p>Helserådgivning</p></div>
+    </div>
+</div>
+
+<div id="card-container">    
+    <div id="card">
+        <div class="back"><p>Korrekt!</p></div>
+        <div class="front"><p>Sårstell</p></div>
+    </div>
+</div>
+    
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Korrekt, men når hun protesterer er det tvang!</p></div>
+        <div class="front"><p>Låse rullestol til bordet</p></div>
+    </div>
+</div>
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Korrekt, men når hun protesterer er det tvang!</p></div>
+        <div class="front"><p>Sengehest</p></div>
+    </div>
+</div>
+
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Dette er ikke relevant her og vil 
+        i tilfelle være en "ny sak".</p></div>
+        <div class="front"><p>Tannbehandling</p></div>
+    </div>
+</div>
+
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Dette er ikke relevant her og vil 
+        i tilfelle være en "ny sak".</p></div>
+        <div class="front"><p>Sporing med GPS-sensor</p></div>
+    </div>
+</div>
+
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Dette er et tvangstiltak som kan
+        anvendes, men må vurderes og meldes inn.</p></div>
+        <div class="front"><p>Overvåknings- kamera på rommet</p></div>
+    </div>
+</div>
+
+<div id="card-container">
+    <div id="card">
+        <div class="back"><p>Dette er et tvangstiltak som ikke er
+        relevant i denne saken.</p></div>
+        <div class="front"><p>Låse rommet om natten</p></div>
+    </div>
+</div>
+
 
 
 </section>
@@ -535,9 +591,73 @@ eller galt?):</h3>
 
 
 
-<!-- Page 8  -->
+<!-- Page 8  Samtykkekompetanse  -->
 
 <div data-role="page" id="page8" data-title="Samtykkekompetanse">
+    <div data-role="content">
+            <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="b">
+                <a href="#page3" data-transition="slide" data-direction="reverse">
+                    Tilbake til temasiden
+                </a>
+            </li>
+            </ul>
+<section>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+	<legend>Date of Birth:</legend>
+
+    <label for="select-choice-month">Month</label>
+<select name="select-choice-month" id="select-choice-month">
+	<option>Month</option>
+	<option value="jan">January</option>
+	<!-- etc. -->
+</select>
+
+	<label for="select-choice-day">Day</label>
+<select name="select-choice-day" id="select-choice-day">
+	<option>Day</option>
+	<option value="1">1</option>
+	<!-- etc. -->
+</select>
+
+<label for="select-choice-year">Year</label>
+<select name="select-choice-year" id="select-choice-year">
+	<option>Year</option>
+	<option value="2011">2011</option>
+	<!-- etc. -->
+</select>
+</fieldset>
+</div>
+
+
+<!--  Koblet til kode i script.js -->
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+<div>
+<span class="flip-front"><img src="BILDER/Kvinne_drikker.jpeg"></span>
+<span class="flip-back"><img src="BILDER/Mann_i_rullestol.jpeg"></span>
+</div>
+
+
+</section>
+    </div>
+</div>
+
+
+<!-- Page 9  -->
+
+<div data-role="page" id="page9" data-title="Samtykkekompetanse">
     <div data-role="content">
             <ul data-role="listview" data-divider-theme="b" data-inset="true">
             <li data-theme="b">
