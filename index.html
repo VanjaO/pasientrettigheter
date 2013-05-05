@@ -1,49 +1,112 @@
 <!DOCTYPE html>
-<head>
-<meta charset="UTF-8" lang="no">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Start spillet F R I V I L L I G</title>
+		<link rel="stylesheet" href="SCRIPT/Frivillig.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+		<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<!--<script src="SCRIPT/script.js"></script>-->
 	
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="SCRIPT/12_siders_mobiltema_gul.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" /> 
-<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<!-- js videoplayer -->
+	<!-- web-vtt-plug-in -->
+<link rel="stylesheet" href="playr/playr.css" />
+<script src="playr/playr.js"></script>
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" /> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="SCRIPT/jquery-1.9.1.min.js"></script>
-<!--<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>-->
-    <script type="text/javascript" src="SCRIPT/jquery.mobile-1.3.0.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>-->
+  
+   <!-- <script src="SCRIPT/jquery.mobile-1.3.0.js"></script>-->
 <!--	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script> -->
 <!--    <script src="SCRIPT/script.js"></script> -->
 <!--    <link rel="stylesheet" href="tvang.css" type="text/css"> -->
 
-<script src="SCRIPT/script.js"></script>
+<!--<script src="SCRIPT/script.js"></script>-->
 
-<title>Tvang i helsetjenesten</title>
+<!-- videospiller -->
+
+<!-- FREE ICONS BY GLYPHISH
+Created by Joseph Wain, 2012
+Web: http://glyphish.com or http://penandthink.com
+Twitter: @glyphish or @jpwain-->
+
 </head>
 <body>
 
-<!-- Mobil_gul.css Hovedsiden -->
+<!-- FRIVILLIG.css Hovedsiden - side 1 -->
+
 <div data-role="page" id="page1">
-    <div data-role="content">
+   
+		<heading>   <h1>F R I V I L L I G</h1>    </heading>
     
-    <section>
-    <h1>Praksis i tråd med pasient- og brukerrettighetsloven kapittel 4A</h1>
-    
-    <p>Hva vil du som helsepersonell gjøre når pasienter
-    som ikke forstår sin egen tilstand motsetter seg nødvendig helsehjelp?
+	<section data-role="content" data-theme="a">
+   
+    <p>Som helsepersonell møter du en pasient
+    som motsetter seg nødvendig helsehjelp og kanskje 
+    ikke forstår sin egen tilstand.
     Velg en situasjon og løs saken! </p>
-    <br/>
-    <br/>
-    <div class="forside">
+    
+<div class="vanskelighetsgrad" data-role="fieldcontain" data-theme="a">
+	<fieldset data-role="controlgroup">
+	<label for="velg-institusjonstype">Velg vanskelighetsgrad</label>
+	<select name="velg-institusjonstype" id="velg-institusjonstype">
+		<option>VELG VANSKELIGHETSGRAD</option>
+			<option value="lett">LETT</option>
+			<option value="moderat">MODERAT</option>
+			<option value="vanskelig">VANSKELIG</option>
+			<option value="ekspert">EKSPERT</option>
+</select>
+</fieldset>
+</div>
+
+<div>
+
+<div id="forside" class="lett">
+	<div class="ribbon-wrapper">
+		<div class="ribbon-green">LETT</div>
+	</div>
     <img src="BILDER/Fortvilet_dame.jpeg">
-    <img src="BILDER/Kvinne_drikker.jpeg">
+    <p> Emma 53 har diabetes og alvorlige beinsår.
+    Hun vil ikke vaske seg. </p>
+</div>
+
+<div id="forside" class="vanskelig">
+	<div class="ribbon-wrapper">
+		<div class="ribbon-red">VANSKELIG</div>
+	</div>
+	<a href="#page2" data-transition="slide">
+    <img src="BILDER/Kvinne_drikker.jpeg"></a>
+    <p> Anna 80 har brukket lårhalsen og glemmer
+    at hun ikke kan stå.</p>
+</div>
+
+<div id="forside" class="middels">
+	<div class="ribbon-wrapper">
+		<div class="ribbon-blue">MIDDELS</div>
+	</div>
   	<img src="BILDER/Fortvilet_mann.jpeg">
- <!--  		<img src="BILDER/Mann_i_rullestol.jpeg">
+  	<p> Arne 78 er hjertesyk og vandrer ut av sykehjemmet på natten. </p>
+</div>
+
+<div id="forside" class="ekspert">
+	<div class="ribbon-wrapper">
+		<div class="ribbon-black">EKSPERT</div>
+	</div>
+	<img src="BILDER/Mann_i_rullestol.jpeg">
+	<p> Ole 63 må ha lungemaskin, men nekter
+	hjemmesykepleier opplæring på maskinen. </p>
+</div>
+
+</div>
+<!--
   		<img src="BILDER/Yngre_dement_dame.jpeg">
         <img src="BILDER/En_hjelpende_hand.jpeg">  -->
-    </div>
-   
-    <div class="dinrolle" data-role="fieldcontain">
-<fieldset data-role="controlgroup">
-	<p>Velg type institusjon og situasjon:<br/><br/>
+
+
+<!--	<p>Velg type institusjon og situasjon:<br/><br/>
 	
 <label for="velg-institusjonstype">Velg institusjonstype</label>
 <select name="velg-institusjonstype" id="velg-institusjonstype">
@@ -62,9 +125,8 @@
 	<option value="c3">Nekter tannhelsetjenester</option>
 	<option value="c4">Velg tilfeldig</option>
 </select>
+</p> -->
 
-
-</p>
 <!--	<label for="select-choice-day">Posisjon</label>
 <select name="select-choice-day" id="select-choice-day">
 	<option>Posisjon</option>
@@ -76,8 +138,7 @@
 	<option value="6">Ikke spesifisert</option>
 	
 </select> -->
-</fieldset>
-</div>
+
 
 <!-- <div class="login">
     <fieldset data-role="fieldcontain">
@@ -88,69 +149,85 @@
     </fieldset>
 </div> -->
 
-<div id="startbutton">
-    <a href="#page2" data-role="button" data-inline="true" data-corners="true" 
-data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
-data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
-<span class="ui-btn-inner ui-btn-corner-all">
-<span class="ui-btn-text">Start</span></span></a>
-</div>
-
 </section>
-</div>
+<!--
+
+-->
+
+
 </div>
 
 <!--  Page 2 Velg situasjonsbeskrivelse --> 
 
 <div data-role="page" id="page2" data-title="Velg situasjonsbeskrivelse">
-    <div data-role="content">
-            <ul data-role="listview" data-divider-theme="b" data-inset="true">
-            <li data-theme="b">
+    <div data-role="content" data-role="content" data-theme="b">
+            <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-theme="a" data-icon="home">
                 <a href="#page1" data-transition="slide" data-direction="reverse">
                     Tilbake til forsiden
                 </a>
             </li>
             </ul>
-<section>  
-     <div>       
-<h1>Frivillighet er målet</h1>
-<p>Pasient- og brukerrettighetsloven kapittel 4A krever at tvang må
-brukes når det er nødvendig.
-<br /><br />
-Det er ikke lov å bruke tvang om helsehjelpen ikke er helt
-nødvendig.
-<br /><br/>
-Utfordringen er å finne 
-løsninger som gjør at vi i størst mulig grad kan gi helsehjelp 
-uten å bruke tvang.<br/><br/> 
-Velg en av situasjonene listet opp. 
-</p>
 
+<section>       
+		<h1>Frivillighet er målet</h1>
+		
+	<p>Pasient- og brukerrettighetsloven kapittel 4A krever at tvang
+	brukes når det er nødvendig.
+	<br /><br />
+	Det er ikke lov å bruke tvang om helsehjelpen ikke er
+	nødvendig.
+	<br /><br/>
+	Utfordringen er å finne 
+	løsninger uten å bruke tvang, men når ingenting annet nytter, 
+	skal tvangsbruk etter loven
+	dokumenteres og rapporteres til fylkeslegen.<br/><br/>  
+	</p>
 
-<label for="flip-b"><p>Følg alle stegene (anbefales) eller ta 
+<div class="spillstart">
+	<div class="spilltekst"><p> Anna 80 har brukket lårhalsen og glemmer
+    at hun ikke kan stå.</p>
+    </div><a href="#page5 data-transition="slide">
+    <img src="BILDER/Kvinne_drikker.jpeg"></a>
+    <div class="spilltekst">
+    <h1>START SPILLET</h1>
+    </div>
+</div>
+
+<!--<div data-role="footer">-->	
+<div data-role="content" data-theme="b">	
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page3" data-transition="slide">
+		Se</a></li>
+      <li><a href="#page4" data-theme="b" data-transition="slide">
+      	Hør</a></li>
+      <li><a href="#page5" data-theme="b" data-transition="slide">
+      	Les</a></li>
+    </ul>
+  </div><!-- /navbar -->
+<!-- </div> /footer -->
+</div>
+
+<!--<label for="flip-b"><p>Følg alle stegene (anbefales) eller ta 
 raskeste ruta gjennom saken!</p></label>
 	<div id="hurtigknapp" data-role="fieldcontain">
 	<select name="slider" id="flip-b" data-role="slider">
 		<option value="no">Alle</option>
 		<option value="yes">Rask</option>
 	</select> 
-</div>
+</div> -->
 
-<div>
+<!--<div>
+<video id="videocase" class="playr_video" width="640" height="360">
+  <source type="video/mp4" src="/video/anna80.mp4">
+  <source type="video/webm" src="/video/anna80.webm">
+  <track kind="subtitles" src="/video/anna.vtt" srclang="en" label="English">
+</video>
+</div>-->
 
-<div id="video-float">
-	<iframe width="250" height="135" src="http://www.youtube.com/embed/recHTUyEX10" 
-	frameborder="0" allowfullscreen></iframe>
 
-	<div class="synopsis">
-	<a href="#page3" data-transition="slide">
-	<p>Anna 80 har brukket lårhalsen. Hun er dement og har vært nær ved å falle
-	når hun reiser seg fra rullestolen fordi hun glemmer at beina ikke bærer.
-	</p><p>VELG 001 </p></a>
-	</div>
-</div>
-
-<div id="video-float">
+<!-- <div id="video-float">
 <iframe width="250" height="135" src="http://www.youtube.com/embed/Od27xiPw3dA" 
 frameborder="0" allowfullscreen></iframe>
 	<div class="synopsis">
@@ -194,26 +271,40 @@ frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 
-<div id="situasjonsbeskrivelser" data-role="footer">
-<a href="#page4" data-role="button" data-inline="true" data-corners="true" 
-data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
-data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
-<span class="ui-btn-inner ui-btn-corner-all">
-<span class="ui-btn-text">Vis alle situasjonsbeskrivelsene</span></span></a>
+-->
+
+
+<div class="vanskelighetsgrad" data-role="content" data-theme="a">
+<fieldset data-role="controlgroup">
+<label for="vanskelighetsgrad">Velg vanskelighetsgrad</label>
+<select name="vanskelighetsgrad" id="vanskelighetsgrad">
+<option>FINN NYE SITUASJONER</option>
+	<a href="#page4" data-transition="slide"><option value="lett">LETTE</option></a>
+	<option value="moderat">MODERATE</option>
+	<option value="vanskelig">VANSKELIGE</option>
+	<option value="ekspert">EKSPERT</option>
+</select>
+</fieldset>
 </div>
 
-</div>
 </section>
 </div>
 </div>
    
+   
+<!-- INFOBOKS1   innhold  -->	
 
-<!--  Page 3 Temamenyene -->
+
+ 
+
+
+
+<!--  Page 3 LØS SAKEN! -->
 
 <div data-role="page" id="page3" data-title="Start spillet!">
     <div data-role="content">
             <ul data-role="listview" data-divider-theme="b" data-inset="true">
-            <li data-theme="b">
+            <li data-theme="a" data-icon="home">
                 <a href="#page1" data-transition="slide" data-direction="reverse">
                     Tilbake til forsiden
                 </a>
@@ -222,38 +313,54 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
             
 <section>
 
-<h1>Løs saken!</h1>
-<p>Gå gjennom tema for tema i saken, eller hopp fritt mellom temaene.<br/><br/> 
+	<h1>Løs saken!</h1>
+	
+	<p>Gå gjennom ett tema i saken, eller spill 
+	FRIVILLIG som tar opp alle temaene.<br/><br/> 
+	</p>
 
-</p>
+<div id="startbutton" data-role="content">
+    <a href="#page4" data-role="button" data-inline="true" data-corners="true" 
+	data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+	data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-a">
+		<span class="ui-btn-inner ui-btn-corner-all">
+		<span class="ui-btn-text">Spill FRIVILLIG</span>
+		</span>
+	</a>
+</div>
+
+<p>...eller velg et tema</p>
 
 <div class="hovedmeny">
 
-
       <ul data-role="listview" data-divider-theme="b" data-inset="true">
             
-            <li data-theme="c">
+       <!--     <li data-theme="c">
                 <a href="#page4" data-transition="slide"><img src="BILDER/Kvinne_drikker.jpeg">
                     <h1>Er tvang nødvendig?</h1>
                 </a>
-            </li>
+            </li> -->
             <li data-theme="c">
-                <a href="#page6" data-transition="slide"><img src="BILDER/Fortvilet_mann.jpeg">
+                <a href="#page6" data-transition="slide">
+                <div class="img-meny"><img src="BILDER/Fortvilet_mann.jpeg"></div>
                     <h1>Helsemessig grunnlag</h1>
                 </a>
             </li>
             <li data-theme="c">
-                <a href="#page7" data-transition="slide"><img src="BILDER/En_hjelpende_hand.jpeg">
+                <a href="#page7" data-transition="slide">
+                <div class="img-meny"><img src="BILDER/En_hjelpende_hand.jpeg"></div>
                     <h1>Samtykkekompetanse</h1>
                 </a>
             </li>
             <li data-theme="c">
-                <a href="#page7" data-transition="slide"><img src="BILDER/Sykepleier_dement_dame.jpeg">
-                    <h1>Alternativer til tvang?</h1>
+                <a href="#page7" data-transition="slide">
+                <div class="img-meny"><img src="BILDER/Sykepleier_dement_dame.jpeg"></div>
+                    <h1>Strategi for frivillighet</h1>
                 </a>
             </li>
             <li data-theme="c">
-                <a href="#page7" data-transition="slide"><img src="BILDER/Mann_i_rullestol.jpeg">
+                <a href="#page7" data-transition="slide">
+                <div class="img-meny"><img src="BILDER/Mann_i_rullestol.jpeg"></div>
                     <h1>Dokumentasjon</h1>
                 </a>
             </li>
@@ -264,6 +371,9 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
             </li> -->
         </ul>
     </div>
+    
+    
+
 </section>       
 </div>
 </div>           
@@ -273,35 +383,23 @@ data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
 </blockquote> -->
 
 
-<!--  Page 4 Er tvang nødvendig?  -->
+<!--  Page 4 ANNA - SPILLET  -->
 
-<div data-role="page" id="page4" data-title="Er tvang nødvendig?">
+<div data-role="page" id="page4" data-title="ANNA - SPILLET">
     <div data-role="content">
             <ul data-role="listview" data-divider-theme="b" data-inset="true">
-            <li data-theme="b">
+            <li data-theme="a">
                 <a href="#page3" data-transition="slide" data-direction="reverse">
                     Tilbake til temasiden
                 </a>
             </li>
             </ul>
-            
-<section>
-<div>
-             <h1>Er tvang nødvendig?</h1>
-        
-<p>Tvang for å gjennomføre helsehjelp kan bare brukes dersom pasienten er ute av stand 
-til å forstå sin egen situasjon og helsehjelpen er
-livsnødvendig.
-</p>
-<p>Anna viser motstand mot enkelte av tiltakene på sykehjemmet. Graden av motstand 
-er vesentlig når vi snakker om tvang.</p>
-<p>Prøv deg på spørsmålene om eventuell tvangsbruk i Annas tilfelle.
-</p>
-</div>
+
+             
+<div id="spillcanvas"><img src="BILDER/Anna80.png"></div>
 
 <div id="questions" data-role="fieldcontain" data-theme="b">
 <h3>Hvilke situasjoner er tvang? </h3>
-
 
     	<fieldset data-role="controlgroup" data-mini="true">
 <input type="checkbox" name="checkbox-0" id="checkbox-mini-0" class="custom" data-mini="true" />
@@ -344,16 +442,16 @@ er vesentlig når vi snakker om tvang.</p>
 </fieldset>
 </div>
 
-<div id="sendsvar" data-role="footer">
+<div id="sendsvar" data-role="content">
 <a href="#page5" data-role="button" data-inline="true" data-corners="true" 
 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
-data-theme="b" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-a">
 <span class="ui-btn-inner ui-btn-corner-all">
-<span class="ui-btn-text">Avgi svar</span></span></a>
+<span class="ui-btn-text">Send svar</span></span></a>
 </div>
 
 
-</section>
+
 
     </div>
 </div>
@@ -365,7 +463,7 @@ data-theme="b" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up
 <div data-role="page" id="page5" data-title="Samtykkekompetanse">
     <div data-role="content">
             <ul data-role="listview"  data-divider-theme="b" data-inset="true" >
-            <li data-theme="b" >
+            <li data-theme="a" >
                 <a href="#page4" data-transition="slide" data-direction="reverse" class="ui-icon-arrow-l">
                     Tilbake til spørsmålssiden
                 </a>
@@ -420,10 +518,10 @@ at om pasienten motsetter seg helsehjelp er det snakk om tvang.
 </div>
 
 
-<div id="sendsvar" data-role="footer">
+<div id="sendsvar" data-role="content">
 <a href="#page6" data-role="button" data-inline="true" data-corners="true" 
 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
-data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-a">
 <span class="ui-btn-inner ui-btn-corner-all">
 <span class="ui-btn-text">Neste tema</span></span></a>
 </div>
@@ -485,10 +583,10 @@ Hva kan i juridisk forstand være nødvendig helsehjelp i dette tilfellet?</p>
 </div>
 
 
-<div id="sendsvar" data-role="footer">
+<div id="sendsvar" data-role="content">
 <a href="#page7" data-role="button" data-inline="true" data-corners="true" 
 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
-data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-d">
+data-theme="a" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-up-a">
 <span class="ui-btn-inner ui-btn-corner-all">
 <span class="ui-btn-text">Avgi svar</span></span></a>
 </div>

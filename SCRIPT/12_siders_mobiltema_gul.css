@@ -131,6 +131,10 @@ section img {
 				border: 3px solid #cfd51d;			
 }
 
+track 		{	
+				color: black;
+				font-size: 1.1em;
+
 section iframe {	position: relative;
 					border: 3px solid #cfd51d;
 					margin-left: 0px;
@@ -138,6 +142,7 @@ section iframe {	position: relative;
 					padding-right: 38%;
 					height: auto;
 					width: 30%;
+					z-index: -10;
 					/* padding-right: 15px; */
 }
 
@@ -148,7 +153,8 @@ section iframe {	position: relative;
 				height: 80px;
 }
 
-.hovedmeny {	
+.hovedmeny h1 {	font-size: 0.9em;
+				margin-left: -20px;
 }
 
 
@@ -680,7 +686,7 @@ section iframe {	position: relative;
 
 /* Bilde i hovedmeny-elementene */
 
-.ui-body-c img { 	width:80px;
+.ui-body-c img { 	width:70px;
 					height: 50px;
 					margin: 14px -12px 10px 10px;
 }
