@@ -403,11 +403,12 @@ section div {
 }
 
 #spillcanvas img {		width: 370px;
-						height: 500px;
+						height: 538px;
 }
 
 #spillcanvas {		margin-left: 0px;
 					margin-top: 3px;
+					outline: 2px solid gray;
 
 }
 
